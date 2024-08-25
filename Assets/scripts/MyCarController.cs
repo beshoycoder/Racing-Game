@@ -118,13 +118,11 @@ public class MyCarController : MonoBehaviour
             {
                 case -1:
                     currentSpeed = maxRevSpeed * Time.deltaTime * Vinput;
-                    //wheel.GetCollider().motorTorque += currentSpeed;
                     wheel.GetCollider().motorTorque += Mathf.Clamp(currentSpeed, -maxRevSpeed, 0);
 
                     break;
                 case 1:
                     currentSpeed += accSpeed * Time.deltaTime * Vinput;
-                    //wheel.GetCollider().motorTorque = currentSpeed;
                     wheel.GetCollider().motorTorque += Mathf.Clamp(currentSpeed, 0, maxSpeed);
                     //source.clip = engineSound;
                     //source.Play();
