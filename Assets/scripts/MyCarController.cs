@@ -37,6 +37,7 @@ public class MyCarController : MonoBehaviour
     [SerializeField] private float BreakForce;
     [SerializeField] private float maxAngle;
     [SerializeField] private float CameraResetDelay;
+    [SerializeField] private Vector3 CenterOfGravity;
     [SerializeField] private Wheels[] CarWheels;
     [SerializeField] private TireDataScriptable tireType;
     [SerializeField] private GameObject targetLookat;
@@ -53,7 +54,7 @@ public class MyCarController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.centerOfMass = Vector3.zero;
+        rb.centerOfMass = CenterOfGravity;
         ApplyTiresData();
     }
 
@@ -191,21 +192,23 @@ public class MyCarController : MonoBehaviour
 
         foreach (Wheels wheel in CarWheels)
         {
-            if (isCarStationary)
-            {
-                wheel.GetCollider().rotationSpeed = 0;
-                wheel.GetMeshes().transform.localRotation = Quaternion.Euler(
-                    Mathf.Lerp(wheel.GetCollider().rotationSpeed, 0, Time.deltaTime),
-                    wheel.GetCollider().steerAngle,
-                    0);
-            }
-            else
-            {
-                wheel.GetCollider().GetWorldPose(out POS, out QOT);
-                wheel.GetMeshes().transform.position = POS;
-                wheel.GetMeshes().transform.rotation = QOT;
-            }
-
+            //if (isCarStationary)
+            //{
+            //    wheel.GetCollider().rotationSpeed = 0;
+            //    wheel.GetMeshes().transform.localRotation = Quaternion.Euler(
+            //        Mathf.Lerp(wheel.GetCollider().rotationSpeed, 0, Time.deltaTime),
+            //        wheel.GetCollider().steerAngle,
+            //        0);
+            //}
+            //else
+            //{
+            //    wheel.GetCollider().GetWorldPose(out POS, out QOT);
+            //    wheel.GetMeshes().transform.position = POS;
+            //    wheel.GetMeshes().transform.rotation = QOT;
+            //}
+            wheel.GetCollider().GetWorldPose(out POS, out QOT);
+            wheel.GetMeshes().transform.position = POS;
+            wheel.GetMeshes().transform.rotation = QOT;
         }
     }
     void CheckMaxSpeed()
