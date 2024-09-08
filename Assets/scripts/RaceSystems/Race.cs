@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RaceManager : MonoBehaviour
+public class Race : ScriptableObject
 {
-    // Start is called before the first frame update
+    [SerializeField] private GameObject[] Checkpoints;
     void Start()
     {
         
