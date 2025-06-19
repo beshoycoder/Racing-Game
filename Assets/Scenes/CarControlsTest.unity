@@ -1073,6 +1073,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trailRender_wheeltrackes
       objectReference: {fileID: 0}
+    - target: {fileID: 1189337482076290677, guid: 94fffab0f53fe4f4a824876c13dca536,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46ccb111943fc9b408a5e4fd23f47f21, type: 2}
     - target: {fileID: 7444982435861802269, guid: 94fffab0f53fe4f4a824876c13dca536,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1354,6 +1359,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trailRender_wheeltrackes
       objectReference: {fileID: 0}
+    - target: {fileID: 1189337482076290677, guid: 94fffab0f53fe4f4a824876c13dca536,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46ccb111943fc9b408a5e4fd23f47f21, type: 2}
     - target: {fileID: 7444982435861802269, guid: 94fffab0f53fe4f4a824876c13dca536,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1998,6 +2008,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trailRender_wheeltrackes
       objectReference: {fileID: 0}
+    - target: {fileID: 1189337482076290677, guid: 94fffab0f53fe4f4a824876c13dca536,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46ccb111943fc9b408a5e4fd23f47f21, type: 2}
     - target: {fileID: 7444982435861802269, guid: 94fffab0f53fe4f4a824876c13dca536,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2645,7 +2660,7 @@ Transform:
   m_GameObject: {fileID: 1732512153}
   serializedVersion: 2
   m_LocalRotation: {x: 0.07088902, y: 0, z: 0, w: 0.9974842}
-  m_LocalPosition: {x: 437.72, y: 1.98, z: 130.89}
+  m_LocalPosition: {x: 401.27, y: 1.98, z: 129.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2740,7 +2755,7 @@ Transform:
   m_GameObject: {fileID: 1754590913}
   serializedVersion: 2
   m_LocalRotation: {x: 0.07088902, y: 0, z: 0, w: 0.9974842}
-  m_LocalPosition: {x: 437.72, y: 1.98, z: 130.89}
+  m_LocalPosition: {x: 401.27, y: 1.98, z: 129.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4167,7 +4182,7 @@ Transform:
   m_GameObject: {fileID: 1328677269460831}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 437.7, y: 0, z: 137.62}
+  m_LocalPosition: {x: 401.25, y: 0, z: 136.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6692,6 +6707,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trailRender_wheeltrackes
       objectReference: {fileID: 0}
+    - target: {fileID: 1189337482076290677, guid: 94fffab0f53fe4f4a824876c13dca536,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46ccb111943fc9b408a5e4fd23f47f21, type: 2}
     - target: {fileID: 7444982435861802269, guid: 94fffab0f53fe4f4a824876c13dca536,
         type: 3}
       propertyPath: m_LocalPosition.x
